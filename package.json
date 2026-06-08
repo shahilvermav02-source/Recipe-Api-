@@ -1,0 +1,31 @@
+{
+  "name": "recipe-api-project",
+  "version": "1.0.0",
+  "description": "this is my first that i am building on my own to have better hands on the stack and sharpened the backened skill",
+  "keywords": [
+    "recipe",
+    "learning",
+    "self"
+  ],
+  "homepage": "https://github.com/shahilvermav02-source/Recipe-Api-#readme",
+  "bugs": {
+    "url": "https://github.com/shahilvermav02-source/Recipe-Api-/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahilvermav02-source/Recipe-Api-.git"
+  },
+  "license": "ISC",
+  "author": "shahil verma",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "3.8.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.6"
+  }
+}
