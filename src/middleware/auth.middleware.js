@@ -1,6 +1,5 @@
 import jwt from "jsonwebtoken";
 import { ApiError } from "../utils/api-error.js";
-import { ProjecMember} from "../models/projectmember.models.js";
 import { asyncHandler } from "../utils/async-handler.js";
 import { User } from "../models/user.models.js";
 

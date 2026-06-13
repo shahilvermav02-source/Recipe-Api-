@@ -26,6 +26,7 @@
     "prettier": "3.8.3"
   },
   "dependencies": {
-    "cors": "^2.8.6"
+    "cors": "^2.8.6",
+    "jsonwebtoken": "^9.0.3"
   }
 }

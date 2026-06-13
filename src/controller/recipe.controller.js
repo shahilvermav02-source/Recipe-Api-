@@ -53,7 +53,7 @@ const deleteRecipe = asyncHandler(async(req,res)=>{
              .json(deleteRecipe,"Recipe Deleted Successfully");
 })
 const getRecipebyId = asyncHandler(async(req,res)=>{
-     const {recipeId}=req.params
+  const recipeId = req.params.recipeId;
     const recipe = await Recipe.findById(recipeId);
     if(!recipe)
     {
@@ -104,3 +104,7 @@ const getUserRecipes = asyncHandler(async (req, res) => {
         )
     );
 });
+export {createRecipe,updateRecipe,deleteRecipe,getAllRecipes,getMyRecipes,getRecipebyId,getUserRecipes}
+
+
+
