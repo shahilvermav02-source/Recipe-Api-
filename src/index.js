@@ -5,15 +5,15 @@ import app from './app.js';// why do we import this file? -> to use the Express 
 dotenv.config({
    path:'./.env',
 });
+const port = process.env.PORT || 3000
 
-
-
-app.get("/",(req,res)=>{
-    res.send("hello world");
-})
-app.get("/shahil",(req,res)=>{
-    res.send("You are learning to build own your own");
-})
-app.listen(port,()=>{
-    console.log(`server is running on port ${port}`);
-})
+connectDB()
+        .then(()=>{
+            app.listen(port, () => {
+                console.log(`Server is running on port ${port}`);
+            });
+        })
+        .catch((error) => {
+            console.error("Error connecting to MongoDB:", error);
+            process.exit(1);
+        })
